@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.itcast.core.dao.UserMapper">
+<!-- public void saveUser(User user);-->
+    <select id="saveUser" parameterType="User" >
+       INSERT INTO USER(NAME,birthday) VALUES(#{name},#{birthday})
+    </select>
+    
+   
+    
+</mapper>
